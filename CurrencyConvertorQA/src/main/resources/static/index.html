@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Currency Converter</h1>
+
+    <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" min="0">
+    </div>
+
+    <div class="currency-switcher">
+        <div class="form-group">
+            <label for="from">From:</label>
+            <div class="select-wrapper">
+                <select id="from"></select>
+            </div>
+        </div>
+
+        <button class="currency-switch-icon">&#8645;
+        </button>
+
+        <div class="form-group">
+            <label for="to">To:</label>
+            <div class="select-wrapper">
+                <select id="to"></select>
+            </div>
+        </div>
+    </div>
+
+    <div id="message-box" style="display: none;">
+        <span id="message"></span>
+    </div>
+    <button id="convert-btn">Convert</button>
+
+    <hr>
+
+    <div class="form-group">
+        <label for="result">Result:</label>
+        <input type="text" id="result" readonly>
+    </div>
+
+    <div class="form-group">
+        <label for="rate">Rate Used:</label>
+        <input type="text" id="rate" readonly>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
